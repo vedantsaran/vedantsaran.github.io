@@ -25,6 +25,7 @@
             padding: 0 2rem;
         }
 
+        /* Header */
         header {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
@@ -67,6 +68,7 @@
             color: #3498db;
         }
 
+        /* Hero Section */
         .hero {
             padding: 8rem 0 4rem;
             text-align: center;
@@ -89,6 +91,7 @@
             margin: 0 auto 2rem;
         }
 
+        /* Highlight numbers and achievements */
         .highlight-number {
             color: #e74c3c;
             font-weight: 700;
@@ -157,6 +160,7 @@
             color: white;
         }
 
+        /* Section Styles */
         section {
             margin: 4rem 0;
         }
@@ -207,6 +211,7 @@
             font-style: italic;
         }
 
+        /* Awards Section */
         .award-item {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
@@ -226,6 +231,7 @@
             opacity: 0.9;
         }
 
+        /* Skills Section */
         .skills-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -260,6 +266,7 @@
             font-weight: 500;
         }
 
+        /* Footer */
         footer {
             background: #2c3e50;
             color: white;
@@ -287,6 +294,7 @@
             color: #3498db;
         }
 
+        /* Responsive */
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.5rem;
@@ -307,10 +315,12 @@
             }
         }
 
+        /* Smooth scrolling */
         html {
             scroll-behavior: smooth;
         }
 
+        /* Animation */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -342,13 +352,184 @@
     </header>
 
     <main>
-        <!-- Main content remains unchanged -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="fade-in">Vedant Saran</h1>
+                <p class="fade-in">Enthusiastic high school junior with a strong focus on computer science, algorithms, and emerging technologies in NLP and LLMs. USACO Platinum achiever and Wikipedia administrator passionate about computational problem-solving.</p>
+                
+                <div class="contact-info fade-in">
+                    <div class="contact-item">
+                        <span>📍</span>
+                        <span>Lexington, Massachusetts</span>
+                    </div>
+                    <div class="contact-item">
+                        <span>✉️</span>
+                        <span>vedantsaran@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span>📞</span>
+                        <span>781-323-0490</span>
+                    </div>
+                </div>
+
+                <div class="cta-buttons fade-in">
+                    <a href="#experience" class="btn btn-primary">View Experience</a>
+                    <a href="#projects" class="btn btn-secondary">See Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="card">
+                <h3>Lexington High School</h3>
+                <p class="date">2022 – Present</p>
+                <p><strong>SAT:</strong> <span class="highlight-stat">1580/1600</span></p>
+                <p><strong>GPA:</strong> <span class="highlight-stat">3.8/4.0</span></p>
+                <p><strong>AP Courses:</strong> Computer Science A (A), Biology (A), World History (A), US History (A), Chemistry (A)</p>
+            </div>
+        </section>
+
+        <section id="experience" class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Founder & Lead Quant Dev</h3>
+                    <p class="date">Lexington Paper Club | 2024 – Present</p>
+                    <p>Founded and lead a paper trading and quantitative analysis group focused on financial markets and algorithmic trading strategies.</p>
+                    <a href="https://lexpc.vercel.app" target="_blank" style="color: #3498db; text-decoration: none;">→ Visit lexpc.vercel.app</a>
+                </div>
+
+                <div class="card">
+                    <h3>USACO Tutor</h3>
+                    <p class="date">2023 – Present</p>
+                    <p>Tutor <span class="highlight-number">10+</span> students in USA Computing Olympiad (USACO) preparation, guiding them from Bronze to Platinum divisions. Provide personalized instruction in competitive programming, algorithms, and problem-solving strategies.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Computer Science Club Organizer</h3>
+                    <p class="date">2023 – Present</p>
+                    <p>Planned and led weekly sessions on data structures, algorithms, and programming best practices. Mentored club members in coding competitions and developed practice problems to enhance problem-solving abilities.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Linguistics Club Leader</h3>
+                    <p class="date">2023 – Present</p>
+                    <p>Facilitated weekly discussions on linguistics and computational linguistics. Organized problem-solving sessions and participated in national-level linguistics competitions.</p>
+                    <a href="https://lexingtonlinguisticsclub.github.io" target="_blank" style="color: #3498db; text-decoration: none;">→ Visit Club Website</a>
+                </div>
+
+                <div class="card">
+                    <h3>Wikipedia Administrator</h3>
+                    <p class="date">2023 – Present</p>
+                    <p>Contributed <span class="highlight-number">10,000+</span> edits across multiple articles, yielding <span class="highlight-number">millions</span> of page views. Developed automated tools to streamline editor experience and reduce vandalism while collaborating with a global community.</p>
+            
+                </div>
+
+                <div class="card">
+                    <h3>Lexplorations Volunteer</h3>
+                    <p class="date">Summer 2023</p>
+                    <p>Assisted children with educational activities, helping to create a supportive learning atmosphere. Maintained a clean, organized environment and collaborated with staff for smooth program operations.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Wikipedia Antivandalism Tool</h3>
+                    <p class="date">2024 – Present</p>
+                    <p>Built a JavaScript tool that enabled <span class="highlight-number">hundreds</span> of users to detect and revert <span class="highlight-number">thousands</span> of vandalism edits, protecting <span class="highlight-number">millions</span> of Wikipedia readers from harmful content.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Wikipedia Categorization Tool</h3>
+                    <p class="date">2025 – Present</p>
+                    <p>Developed a simple yet powerful categorization tool using C++ and JavaScript, allowing editors to organize and add categories to <span class="highlight-number">thousands</span> of Wikipedia articles efficiently.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Civic Engagement Course Development</h3>
+                    <p class="date">2024</p>
+                    <p>Helped design and develop a weeklong educational course on voting rights and processes for high school students, promoting civic awareness and enabling many to engage with democratic processes for the first time.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="awards" class="container">
+            <h2 class="section-title">Awards & Honors</h2>
+            <div class="award-item">
+                <h3>USA Computing Olympiad (USACO) – Platinum Division</h3>
+                <p class="achievement">Achieved Platinum among <span class="highlight-number">~400</span> participants at this level out of approximately <span class="highlight-number">15,000</span> total competitors, with only <span class="highlight-number">17</span> achieving this in this cycle (2024)</p>
+                <p>Demonstrated advanced programming skills and strong proficiency in high-level algorithms and data structures in a highly competitive environment.</p>
+                <a href="https://usaco.org/current/data/dec24_gold_results.html" target="_blank" style="color: rgba(255,255,255,0.8); text-decoration: none;">→ View Results</a>
+            </div>
+
+            <div class="award-item">
+                <h3>MIT Informatics Tournament</h3>
+                <p class="achievement"><span class="highlight-number">35th</span> Worldwide, <span class="highlight-number">5th</span> Divisional</p>
+                <p>Achieved <span class="highlight-number">35th</span> place out of <span class="highlight-number">500+</span> teams and <span class="highlight-number">thousands</span> of competitors worldwide, including <span class="highlight-number">5th</span> in the division. Demonstrated advanced algorithmic programming skills.</p>
+            </div>
+
+            <div class="award-item">
+                <h3>North American Computational Linguistics Olympiad (NACLO)</h3>
+                <p class="achievement">Invitational Qualifier (2025)</p>
+                <p>Among the top <span class="highlight-number">hundred</span> linguistics competitors in the United States & Canada. Demonstrated advanced computational linguistics knowledge.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Technical Expertise</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Data Structures</span>
+                        <span class="skill-tag">Algorithms</span>
+                        <span class="skill-tag">Competitive Programming</span>
+                        <span class="skill-tag">Software Automation</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Specialized Areas</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Computational Linguistics</span>
+                        <span class="skill-tag">Quantitative Analysis</span>
+                        <span class="skill-tag">Community Management</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Leadership</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Team Leadership</span>
+                        <span class="skill-tag">Mentoring</span>
+                        <span class="skill-tag">Project Management</span>
+                        <span class="skill-tag">Public Speaking</span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="container">
             <div class="footer-links">
                 <a href="mailto:vedantsaran@gmail.com">Email</a>
+          
                 <a href="https://lexingtonlinguisticsclub.github.io" target="_blank">Linguistics Club</a>
                 <a href="https://lexpc.vercel.app" target="_blank">Paper Club</a>
             </div>
@@ -357,6 +538,7 @@
     </footer>
 
     <script>
+        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -370,6 +552,7 @@
             });
         });
 
+        // Add fade-in animation on scroll
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -383,9 +566,11 @@
             });
         }, observerOptions);
 
+        // Observe all cards and sections
         document.querySelectorAll('.card, .award-item, .skill-category').forEach(el => {
             observer.observe(el);
         });
     </script>
 </body>
 </html>
+
