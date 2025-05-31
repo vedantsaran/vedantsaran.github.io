@@ -68,6 +68,69 @@
             color: #3498db;
         }
 
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: #2c3e50;
+            margin: 3px 0;
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+        }
+
+        .mobile-menu.active {
+            display: block;
+        }
+
+        .mobile-menu a {
+            display: block;
+            padding: 1rem 0;
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            transition: color 0.3s ease;
+        }
+
+        .mobile-menu a:hover {
+            color: #3498db;
+        }
+
+        .mobile-menu a:last-child {
+            border-bottom: none;
+        }
+
         /* Hero Section */
         .hero {
             padding: 8rem 0 4rem;
@@ -294,10 +357,15 @@
             color: #3498db;
         }
 
-        /* Responsive */
+        /* Responsive Design */
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+                padding: 0 1rem;
             }
 
             .contact-info {
@@ -310,8 +378,69 @@
                 display: none;
             }
 
+            .hamburger {
+                display: flex;
+            }
+
             .cards-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .skills-container {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 200px;
+                text-align: center;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .hero {
+                padding: 6rem 0 3rem;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .contact-info {
+                font-size: 0.9rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .card {
+                padding: 1.5rem;
+            }
+
+            .award-item {
+                padding: 1.5rem;
             }
         }
 
@@ -348,7 +477,19 @@
                 <li><a href="#awards">Awards</a></li>
                 <li><a href="#skills">Skills</a></li>
             </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#awards">Awards</a>
+            <a href="#skills">Skills</a>
+        </div>
     </header>
 
     <main>
@@ -423,7 +564,7 @@
                     <h3>Wikipedia Administrator</h3>
                     <p class="date">2023 – Present</p>
                     <p>Contributed <span class="highlight-number">10,000+</span> edits across multiple articles, yielding <span class="highlight-number">millions</span> of page views. Developed automated tools to streamline editor experience and reduce vandalism while collaborating with a global community.</p>
-            
+                    
                 </div>
 
                 <div class="card">
@@ -529,11 +670,10 @@
         <div class="container">
             <div class="footer-links">
                 <a href="mailto:vedantsaran@gmail.com">Email</a>
-          
                 <a href="https://lexingtonlinguisticsclub.github.io" target="_blank">Linguistics Club</a>
                 <a href="https://lexpc.vercel.app" target="_blank">Paper Club</a>
             </div>
-            <p>&copy; 2025 Vedant Saran. Built with passion.</p>
+            <p>&copy; 2025 Vedant Saran. Built with passion for technology and education.</p>
         </div>
     </footer>
 
@@ -549,7 +689,40 @@
                         block: 'start'
                     });
                 }
+                
+                // Close mobile menu after clicking a link
+                const mobileMenu = document.getElementById('mobileMenu');
+                const hamburger = document.getElementById('hamburger');
+                if (mobileMenu.classList.contains('active')) {
+                    mobileMenu.classList.remove('active');
+                    hamburger.classList.remove('active');
+                }
             });
+        });
+
+        // Hamburger menu functionality
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });
+
+        // Close mobile menu on window resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                mobileMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
         });
 
         // Add fade-in animation on scroll
