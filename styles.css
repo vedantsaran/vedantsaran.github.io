@@ -267,6 +267,33 @@ nav {
     color: var(--bg);
 }
 
+.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+[data-theme="light"] .btn-sm {
+    background-color: var(--primary);
+    color: var(--text-dark);
+}
+
+[data-theme="dark"] .btn-sm {
+    background-color: var(--secondary);
+    color: var(--text-light);
+}
+
+[data-theme="light"] .btn-sm:hover {
+    background-color: var(--text-dark);
+    color: var(--primary);
+}
+
+[data-theme="dark"] .btn-sm:hover {
+    background-color: var(--text-light);
+    color: var(--secondary);
+}
+
 section {
     margin: 4rem 0;
 }
