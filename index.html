@@ -313,10 +313,39 @@
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
         }
 
+        [data-theme="light"] .card:hover a {
+            color: var(--text-dark) !important;
+            opacity: 0.9;
+        }
+
+        [data-theme="light"] .card:hover a:hover {
+            opacity: 1;
+        }
+
+        .card a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .card a:hover {
+            opacity: 0.8;
+        }
+
         [data-theme="light"] .card:hover h3,
-        [data-theme="light"] .card:hover p,
+        [data-theme="light"] .card:hover p {
+            color: var(--text-dark);
+        }
+
+        [data-theme="light"] .card:hover .highlight-number,
+        [data-theme="light"] .card:hover .highlight-stat {
+            color: var(--text-dark);
+            font-weight: 700;
+        }
+
         [data-theme="light"] .card:hover .date {
             color: var(--text-dark);
+            font-weight: 500;
         }
 
         .card h3 {
