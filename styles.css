@@ -427,6 +427,16 @@ section {
     opacity: 0.9;
 }
 
+.award-item a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: opacity var(--transition-speed);
+}
+
+.award-item a:hover {
+    opacity: 0.8;
+}
+
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
