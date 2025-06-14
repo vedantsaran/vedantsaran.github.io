@@ -544,4 +544,62 @@ html {
     to { opacity: 1; transform: translateY(0); }
 }
 
-.fade-in { animation: fadeInUp 0.6s ease forwards; } 
+.fade-in { animation: fadeInUp 0.6s ease forwards; }
+
+.testimonial-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.testimonial-content p {
+    font-style: italic;
+    line-height: 1.8;
+    position: relative;
+    padding: 0 1rem;
+}
+
+.testimonial-content p::before,
+.testimonial-content p::after {
+    content: '"';
+    color: var(--primary);
+    font-size: 2rem;
+    position: absolute;
+}
+
+.testimonial-content p::before {
+    top: -1rem;
+    left: -0.5rem;
+}
+
+.testimonial-content p::after {
+    bottom: -1.5rem;
+    right: -0.5rem;
+}
+
+.testimonial-author {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    margin-top: 1rem;
+}
+
+.testimonial-author strong {
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+
+.testimonial-author span {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+[data-theme="light"] .card:hover .testimonial-author strong {
+    color: var(--text-dark);
+}
+
+[data-theme="light"] .card:hover .testimonial-content p::before,
+[data-theme="light"] .card:hover .testimonial-content p::after {
+    color: var(--text-dark);
+} 
