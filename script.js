@@ -101,4 +101,23 @@ if (frivolitiesLink) {
             dropdown.classList.toggle('active');
         }
     });
-} 
+}
+
+// Header scroll behavior
+let lastScrollTop = 0;
+const header = document.querySelector('header');
+const scrollThreshold = 100;
+
+window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (scrollTop > lastScrollTop && scrollTop > scrollThreshold) {
+        // Scrolling down
+        header.classList.add('hidden');
+    } else {
+        // Scrolling up
+        header.classList.remove('hidden');
+    }
+    
+    lastScrollTop = scrollTop;
+}); 
