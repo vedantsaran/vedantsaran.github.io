@@ -935,11 +935,14 @@ html {
     font-size: 1.2em;
 }
 
-.post-header {
-    margin-bottom: 3rem;
+.post-content {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.post-header h1 {
+.post-content h1 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     color: var(--text);
@@ -947,7 +950,7 @@ html {
     font-weight: 700;
 }
 
-.post-meta {
+.post-content .post-meta {
     display: flex;
     gap: 1.5rem;
     margin-bottom: 1.5rem;
@@ -957,13 +960,14 @@ html {
     font-size: 0.9rem;
 }
 
-.post-tags {
+.post-content .post-tags {
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
 
-.tag {
+.post-content .tag {
     display: inline-block;
     padding: 0.3rem 0.8rem;
     background: rgba(115, 200, 169, 0.1);
@@ -975,16 +979,9 @@ html {
     transition: var(--transition);
 }
 
-.tag:hover {
+.post-content .tag:hover {
     background: var(--primary);
     color: var(--text-dark);
-}
-
-.post-content {
-    background: var(--card);
-    border-radius: 12px;
-    padding: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .post-content p {
@@ -1076,7 +1073,7 @@ html {
         width: 95vw;
     }
 
-    .post-header h1 {
+    .post-content h1 {
         font-size: 2rem;
     }
 
@@ -1100,7 +1097,7 @@ html {
         padding: 4rem 1rem 2rem;
     }
 
-    .post-header h1 {
+    .post-content h1 {
         font-size: 1.7rem;
     }
 
@@ -1192,7 +1189,7 @@ html {
         width: 95vw;
     }
 
-    .post-header h1 {
+    .post-content h1 {
         font-size: 2rem;
     }
 
