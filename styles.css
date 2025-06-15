@@ -1003,8 +1003,8 @@ html {
 }
 
 .post-content em {
-    color: var(--primary);
-    font-style: normal;
+    font-style: italic;
+    color: inherit;
 }
 
 .post-footer {
