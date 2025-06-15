@@ -936,10 +936,11 @@ html {
 }
 
 .post-content {
-    background: var(--card);
+    background: var(--card-light);
     border-radius: 12px;
     padding: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: var(--text-light);
 }
 
 .post-content h1 {
@@ -1011,6 +1012,8 @@ html {
     margin-top: 3rem;
     padding-top: 2rem;
     border-top: 2px solid var(--primary);
+    background: var(--bg-light);
+    color: var(--text-light);
 }
 
 .post-navigation {
@@ -1220,5 +1223,12 @@ html {
     .blog-card {
         padding: 1rem;
     }
+}
+
+[data-theme="light"] .footer-links a {
+    color: var(--text-light);
+}
+[data-theme="light"] .footer-links a:hover {
+    color: var(--primary);
 }
 
