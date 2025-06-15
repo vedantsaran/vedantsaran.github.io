@@ -59,4 +59,11 @@ themeToggle.addEventListener('click', () => {
     body.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
     themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+});
+
+// Mobile menu dropdown functionality
+document.querySelector('.mobile-menu a[href="frivolities.html"]').addEventListener('click', function(e) {
+    e.preventDefault();
+    const dropdown = this.nextElementSibling;
+    dropdown.classList.toggle('active');
 }); 

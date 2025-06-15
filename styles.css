@@ -554,6 +554,19 @@ footer {
     .movies-grid {
         grid-template-columns: 1fr;
     }
+    .frivolities-dropdown {
+        position: static;
+        display: none;
+        background: transparent;
+        box-shadow: none;
+        padding-left: 1rem;
+    }
+    .nav-links li:hover .frivolities-dropdown {
+        display: none;
+    }
+    .mobile-menu .frivolities-dropdown.active {
+        display: block;
+    }
 }
 
 @media (max-width: 480px) {
@@ -767,4 +780,59 @@ html {
     color: var(--primary);
     font-weight: 500;
     margin-bottom: 0.5rem;
+}
+
+/* Frivolities Dropdown */
+.nav-links li {
+    position: relative;
+}
+
+.frivolities-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--card);
+    backdrop-filter: blur(10px);
+    min-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    z-index: 1000;
+}
+
+.nav-links li:hover .frivolities-dropdown {
+    display: block;
+}
+
+.frivolities-dropdown a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    color: var(--text);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.frivolities-dropdown a:hover {
+    background: var(--primary);
+    color: var(--text-dark);
+}
+
+/* Mobile menu adjustments */
+@media (max-width: 768px) {
+    .frivolities-dropdown {
+        position: static;
+        display: none;
+        background: transparent;
+        box-shadow: none;
+        padding-left: 1rem;
+    }
+
+    .nav-links li:hover .frivolities-dropdown {
+        display: none;
+    }
+
+    .mobile-menu .frivolities-dropdown.active {
+        display: block;
+    }
 } 
