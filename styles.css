@@ -796,6 +796,7 @@
   .director {
     color: var(--primary-color);
     font-weight: 500;
+    font-style: italic;
     margin: 0.5rem 0;
   }
   
