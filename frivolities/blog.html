@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Vedant Saran</title>
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <meta name="description" content="Read Vedant Saran's thoughts on literature, technology, and more.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body data-theme="dark">
     <header>
         <nav class="container">
-            <a href="../index.html" class="logo">Vedant Saran</a>
+            <a href="index.html" class="logo">Vedant Saran</a>
             <ul class="nav-links">
-                <li><a href="../index.html#about">About</a></li>
-                <li><a href="../index.html#experience">Experience</a></li>
-                <li><a href="../index.html#projects">Projects</a></li>
-                <li><a href="../index.html#awards">Awards</a></li>
-                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#education">Education</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#awards">Awards</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
                 <li>
-                    <a href="../frivolities.html" class="active">Frivolities</a>
+                    <a href="frivolities.html">Frivolities</a>
                     <div class="frivolities-dropdown">
                         <a href="blog.html">Blog</a>
                         <a href="books.html">Books</a>
@@ -26,33 +29,29 @@
                     </div>
                 </li>
             </ul>
-            <button class="theme-toggle" id="themeToggle">🌙</button>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">🌙</button>
         </nav>
-        <div class="mobile-menu" id="mobileMenu">
-            <a href="../index.html#about">About</a>
-            <a href="../index.html#experience">Experience</a>
-            <a href="../index.html#projects">Projects</a>
-            <a href="../index.html#awards">Awards</a>
-            <a href="../index.html#skills">Skills</a>
-            <a href="../frivolities.html" class="active">Frivolities</a>
-            <div class="frivolities-dropdown">
-                <a href="blog.html">Blog</a>
-                <a href="books.html">Books</a>
-                <a href="movies.html">Movies</a>
-            </div>
-        </div>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="container">
-                <h1 class="fade-in">Blog</h1>
-                <p class="fade-in">Coming soon...</p>
+        <section class="blog-index container">
+            <h1 class="section-title">Blog</h1>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-card-content">
+                        <h2><a href="blog/stoner-2025.html">Conviction Over Consequence: Re-reading Stoner in 2025</a></h2>
+                        <div class="blog-meta">
+                            <time datetime="2025-06-15">June 15, 2025</time>
+                            <span class="reading-time">6 min read</span>
+                        </div>
+                        <p class="blog-excerpt">A deep dive into John Williams's Stoner and its relevance in 2025, exploring themes of conviction, purpose, and the quiet life.</p>
+                        <div class="blog-tags">
+                            <span class="tag">Literature</span>
+                            <span class="tag">Book Review</span>
+                            <span class="tag">Philosophy</span>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
     </main>
@@ -68,6 +67,6 @@
         </div>
     </footer>
 
-    <script src="../script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html> 
