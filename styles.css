@@ -903,11 +903,19 @@ html {
 
 /* Blog Styles */
 .blog-post {
-    padding: 2rem 0;
+    padding: 0;
+}
+
+.blog-post .card {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: var(--card);
 }
 
 .blog-index {
-    padding: 2rem 0;
+    padding: 0;
 }
 
 .blog-index .section-title {
@@ -1041,16 +1049,14 @@ html {
 
 /* Blog Index Styles */
 .blog-grid {
-    display: grid;
-    gap: 2rem;
-    margin-top: 2rem;
+    display: contents;
 }
 
 .blog-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background: var(--card);
-    border-radius: 1rem;
-    overflow: hidden;
-    transition: var(--transition);
+    transition: var(--transition-transform), var(--transition-bg);
 }
 
 .blog-card:hover {
