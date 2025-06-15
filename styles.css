@@ -679,9 +679,18 @@ html {
 }
 
 .rating {
-    color: #ffd700;
+    display: flex;
+    gap: 2px;
+    margin-top: 0.5rem;
+}
+
+.star {
+    color: var(--primary);
     font-size: 1.2rem;
-    margin: 0.5rem 0;
+}
+
+[data-theme="light"] .star {
+    color: var(--primary);
 }
 
 .book-tags {
@@ -782,6 +791,11 @@ html {
     margin-bottom: 0.5rem;
 }
 
+[data-theme="light"] .author,
+[data-theme="light"] .director {
+    color: var(--primary);
+}
+
 /* Frivolities Dropdown */
 .nav-links li {
     position: relative;
@@ -835,4 +849,37 @@ html {
     .mobile-menu .frivolities-dropdown.active {
         display: block;
     }
+}
+
+/* Frivolities Grid Links */
+.frivolities-grid .card {
+    text-decoration: none;
+    color: var(--text);
+    transition: var(--transition);
+}
+
+.frivolities-grid .card:hover {
+    transform: translateY(-5px);
+    background: var(--primary);
+    color: var(--text-dark);
+}
+
+.frivolities-grid .card h2 {
+    color: inherit;
+    margin-bottom: 0.5rem;
+}
+
+.frivolities-grid .card p {
+    color: inherit;
+    opacity: 0.8;
+}
+
+[data-theme="light"] .frivolities-grid .card:hover {
+    background: var(--primary);
+    color: var(--text-dark);
+}
+
+[data-theme="dark"] .frivolities-grid .card:hover {
+    background: var(--primary);
+    color: var(--text-dark);
 } 
