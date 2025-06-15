@@ -936,11 +936,11 @@ html {
 }
 
 .post-content {
-    background: var(--card-light);
+    background: var(--card);
     border-radius: 12px;
     padding: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: var(--text-light);
+    color: var(--text);
 }
 
 .post-content h1 {
@@ -1012,8 +1012,8 @@ html {
     margin-top: 3rem;
     padding-top: 2rem;
     border-top: 2px solid var(--primary);
-    background: var(--bg-light);
-    color: var(--text-light);
+    background: var(--bg);
+    color: var(--text);
 }
 
 .post-navigation {
@@ -1230,5 +1230,15 @@ html {
 }
 [data-theme="light"] .footer-links a:hover {
     color: var(--primary);
+}
+
+[data-theme="light"] .post-content {
+    background: var(--card-light);
+    color: var(--text-light);
+}
+[data-theme="light"] .post-footer {
+    background: var(--bg-light);
+    color: var(--text-light);
+    border-top: 2px solid var(--primary);
 }
 
