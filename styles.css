@@ -1242,3 +1242,15 @@ html {
     border-top: 2px solid var(--primary);
 }
 
+.contact-info a {
+    color: white;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+[data-theme="light"] .contact-info a {
+    color: var(--text-light);
+}
+.contact-info a:hover {
+    color: var(--primary);
+}
+
