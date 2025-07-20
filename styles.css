@@ -1285,14 +1285,22 @@ html {
 }
 
 .contact-info a {
-    color: white;
-    text-decoration: underline;
-    transition: color 0.2s;
+    color: var(--text);
+    text-decoration: none;
+    transition: var(--transition);
+    border-bottom: 1px solid transparent;
 }
+
+.contact-info a:hover {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+}
+
 [data-theme="light"] .contact-info a {
     color: var(--text-light);
 }
-.contact-info a:hover {
+
+[data-theme="light"] .contact-info a:hover {
     color: var(--primary);
 }
 

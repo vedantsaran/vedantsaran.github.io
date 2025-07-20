@@ -9,6 +9,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         } else {
             console.warn(`Target element not found: ${targetId}`);
         }
+        // Close mobile menu when clicking internal links
+        const mobileMenu = document.getElementById('mobileMenu');
+        const hamburger = document.getElementById('hamburger');
+        if (mobileMenu?.classList.contains('active')) {
+            mobileMenu.classList.remove('active');
+            hamburger?.classList.remove('active');
+        }
+    });
+});
+
+// Close mobile menu when clicking on any navigation link
+document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
         const mobileMenu = document.getElementById('mobileMenu');
         const hamburger = document.getElementById('hamburger');
         if (mobileMenu?.classList.contains('active')) {
@@ -91,17 +104,7 @@ if (themeToggle && body) {
     });
 }
 
-// Mobile menu dropdown functionality with error handling
-const frivolitiesLink = document.querySelector('.mobile-menu a[href="frivolities.html"]');
-if (frivolitiesLink) {
-    frivolitiesLink.addEventListener('click', function(e) {
-        e.preventDefault();
-        const dropdown = this.nextElementSibling;
-        if (dropdown) {
-            dropdown.classList.toggle('active');
-        }
-    });
-}
+
 
 // Header scroll behavior
 let lastScrollTop = 0;
