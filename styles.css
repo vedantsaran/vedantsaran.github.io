@@ -310,16 +310,16 @@ section {
 
 /* Add extra spacing between specific sections for better visual separation */
 #about {
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
 }
 
 #education {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 #experience {
-    margin-top: 6rem;
+    margin-top: 5rem;
 }
 
 .section-title {
