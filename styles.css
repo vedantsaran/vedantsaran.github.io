@@ -1427,3 +1427,135 @@ html {
     }
 }
 
+/* 404 Page Styles */
+.error-content {
+    text-align: center;
+    padding: 4rem 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.error-content h1 {
+    font-size: 8rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.error-content h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--text);
+}
+
+.error-content p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: var(--text);
+    opacity: 0.8;
+}
+
+.error-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+}
+
+.error-actions .btn {
+    min-width: 120px;
+}
+
+.error-suggestions {
+    background: var(--card);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.error-suggestions h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: var(--text);
+}
+
+.suggestion-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.suggestion-links a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary);
+    border-radius: 6px;
+    transition: var(--transition);
+}
+
+.suggestion-links a:hover {
+    background: var(--primary);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .error-content h1 {
+        font-size: 6rem;
+    }
+    
+    .error-content h2 {
+        font-size: 2rem;
+    }
+    
+    .error-content p {
+        font-size: 1.1rem;
+    }
+    
+    .error-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .error-actions .btn {
+        width: 200px;
+    }
+    
+    .suggestion-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .suggestion-links a {
+        width: 200px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .error-content h1 {
+        font-size: 4rem;
+    }
+    
+    .error-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .error-content p {
+        font-size: 1rem;
+    }
+    
+    .error-content {
+        padding: 2rem 0;
+    }
+    
+    .error-suggestions {
+        padding: 1.5rem;
+    }
+}
+

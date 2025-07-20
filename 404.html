@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <title>Page Not Found - Vedant Saran</title>
+    <meta name="description" content="The page you're looking for doesn't exist. Return to Vedant Saran's homepage.">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body data-theme="dark">
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">Vedant Saran</a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#education">Education</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#awards">Awards</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">🌙</button>
+            <div class="hamburger" id="hamburger" role="button" aria-label="Toggle navigation menu" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation menu">
+            <a href="index.html#about">About</a>
+            <a href="index.html#education">Education</a>
+            <a href="index.html#experience">Experience</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#awards">Awards</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="blog.html">Blog</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="error-content">
+                    <h1 class="fade-in">404</h1>
+                    <h2 class="fade-in">Page Not Found</h2>
+                    <p class="fade-in">Oops! The page you're looking for doesn't exist. It might have been moved, deleted, or you entered the wrong URL.</p>
+                    
+                    <div class="error-actions fade-in">
+                        <a href="index.html" class="btn btn-primary">Go Home</a>
+                        <a href="blog.html" class="btn btn-secondary">Visit Blog</a>
+                        <button onclick="history.back()" class="btn btn-secondary">Go Back</button>
+                    </div>
+                    
+                    <div class="error-suggestions fade-in">
+                        <h3>Looking for something specific?</h3>
+                        <div class="suggestion-links">
+                            <a href="index.html#about">About Me</a>
+                            <a href="index.html#experience">Experience</a>
+                            <a href="index.html#projects">Projects</a>
+                            <a href="blog.html">Blog Posts</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="mailto:vedantsaran@gmail.com">Email</a>
+                <a href="blog.html">Blog</a>
+                <a href="https://lexingtonlinguisticsclub.github.io" target="_blank">Linguistics Club</a>
+                <a href="https://lexqrg.vercel.app" target="_blank">Quantitative Research Group</a>
+            </div>
+            <p>&copy; 2025 Vedant Saran. Built with love ❤️</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
