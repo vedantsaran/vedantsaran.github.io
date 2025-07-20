@@ -723,10 +723,23 @@ html {
 }
 
 .tag {
-    background: var(--card-bg);
-    padding: 0.25rem 0.75rem;
-    border-radius: 15px;
-    font-size: 0.9rem;
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background: rgba(115, 200, 169, 0.1);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+.tag:hover {
+    background: var(--primary);
+    color: var(--text-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(115, 200, 169, 0.3);
 }
 
 .book-list {
@@ -1170,6 +1183,26 @@ html {
     flex-wrap: wrap;
 }
 
+.blog-tags .tag {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background: rgba(115, 200, 169, 0.1);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+.blog-tags .tag:hover {
+    background: var(--primary);
+    color: var(--text-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(115, 200, 169, 0.3);
+}
+
 @media (max-width: 768px) {
     .blog-index {
         padding-top: 4rem;
@@ -1222,6 +1255,15 @@ html {
 
     .blog-card {
         padding: 1rem;
+    }
+    
+    .blog-tags {
+        gap: 0.3rem;
+    }
+    
+    .blog-tags .tag {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.6rem;
     }
 }
 
