@@ -308,6 +308,20 @@ section {
     margin: 4rem 0;
 }
 
+/* Add extra spacing between specific sections for better visual separation */
+#about {
+    margin-bottom: 6rem;
+}
+
+#education {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+#experience {
+    margin-top: 6rem;
+}
+
 .section-title {
     font-size: 2.5rem;
     font-weight: 700;
