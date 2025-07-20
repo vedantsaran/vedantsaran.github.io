@@ -308,11 +308,6 @@ section {
     margin: 4rem 0;
 }
 
-/* Ensure consistent spacing for sections with single cards */
-section .card:only-child {
-    margin-bottom: 0;
-}
-
 .section-title {
     font-size: 2.5rem;
     font-weight: 700;
@@ -325,6 +320,7 @@ section .card:only-child {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+    margin-bottom: 3rem;
 }
 
 .card {
@@ -392,11 +388,7 @@ section .card:only-child {
 
 .card p {
     color: var(--text);
-    margin-bottom: 1.5rem;
-}
-
-.card p:last-child {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
 }
 
 .card .date {
@@ -1616,4 +1608,3 @@ html {
         padding: 1.5rem;
     }
 }
-
