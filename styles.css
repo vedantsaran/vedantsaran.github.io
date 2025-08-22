@@ -1646,6 +1646,41 @@ html {
     opacity: 0.8;
 }
 
+/* Tooltip for maintenance mode */
+.maintenance-mode::before {
+    content: "Under Maintenance";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    margin-bottom: 8px;
+}
+
+.maintenance-mode::before::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: rgba(0, 0, 0, 0.9);
+}
+
+.maintenance-mode:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
 .maintenance-overlay {
     position: fixed;
     top: 0;
