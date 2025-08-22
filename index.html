@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
-<body data-theme="dark">
+<body data-theme="dark" class="main-page">
     <header>
         <nav class="container">
             <a href="#" class="logo">Vedant Saran</a>
@@ -281,5 +281,16 @@
     </footer>
 
     <script src="script.js"></script>
+    
+    <!-- Maintenance Overlay -->
+    <div class="maintenance-overlay" id="maintenanceOverlay" style="display: none;">
+        <div class="maintenance-content">
+            <div class="maintenance-icon">🔧</div>
+            <h1 class="maintenance-title">Under Maintenance</h1>
+            <p class="maintenance-message">We're currently revamping the blog to bring you an even better experience. Please check back soon!</p>
+            <p class="maintenance-eta">Expected completion: Coming soon</p>
+            <a href="#" class="back-home-btn" onclick="hideMaintenanceOverlay()">Back to Home</a>
+        </div>
+    </div>
 </body>
 </html>
