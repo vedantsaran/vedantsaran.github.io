@@ -1626,7 +1626,6 @@ html {
 /* Maintenance Mode Styles */
 .maintenance-mode {
     opacity: 0.5;
-    pointer-events: none;
     filter: grayscale(100%);
     transition: all 0.3s ease;
     cursor: not-allowed;
@@ -1648,7 +1647,7 @@ html {
 
 /* Tooltip for maintenance mode */
 .maintenance-mode::before {
-    content: "Under Maintenance";
+    content: "I'm revamping the blog";
     position: absolute;
     bottom: 100%;
     left: 50%;
