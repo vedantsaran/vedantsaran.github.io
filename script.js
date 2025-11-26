@@ -137,37 +137,6 @@ if (header) {
     });
 } 
 
-// Maintenance Mode Functionality
-function enableMaintenanceMode() {
-    // Add maintenance mode to blog-related elements on the main page
-    const blogLinks = document.querySelectorAll('a[href*="blog"]');
-    blogLinks.forEach(link => {
-        link.classList.add('maintenance-mode');
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            showMaintenanceOverlay();
-        });
-    });
-}
-
-function showMaintenanceOverlay() {
-    const overlay = document.getElementById('maintenanceOverlay');
-    if (overlay) {
-        overlay.style.display = 'flex';
-    }
-}
-
-function hideMaintenanceOverlay() {
-    const overlay = document.getElementById('maintenanceOverlay');
-    if (overlay) {
-        overlay.style.display = 'none';
-    }
-}
-
-// Initialize maintenance mode if on main page
-if (document.body.classList.contains('main-page')) {
-    enableMaintenanceMode();
-}
 
 // Notification Banner Functionality
 const notificationClose = document.getElementById('notificationClose');
