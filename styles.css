@@ -307,6 +307,7 @@ section {
     font-weight: 700;
     text-align: left;
     margin-bottom: 3rem;
+    margin-top: 1.5rem;
     color: var(--text);
     letter-spacing: -0.02em;
 }
@@ -817,6 +818,10 @@ html {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     opacity: 0.5;
+}
+
+.blog-card.latest .blog-card-content {
+    padding-top: 1.5rem;
 }
 
 .blog-card h3 {
