@@ -3,11 +3,11 @@
     --primary-hover: #2d3748;
     --accent: #718096;
     --text-light: #1a202c;
-    --text-dark: #e2e8f0;
+    --text-dark: #e8e8e8;
     --bg-light: #ffffff;
-    --bg-dark: #0f172a;
+    --bg-dark: #121212;
     --card-light: #ffffff;
-    --card-dark: #1e293b;
+    --card-dark: #1a1a1a;
     --border-light: rgba(0, 0, 0, 0.06);
     --border-dark: rgba(255, 255, 255, 0.08);
     --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
