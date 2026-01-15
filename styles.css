@@ -241,7 +241,7 @@ nav {
     gap: 0.75rem;
     color: var(--text);
     font-size: 0.9375rem;
-    opacity: 0.7;
+    opacity: 0.85;
 }
 
 .contact-item span:first-child {
@@ -603,7 +603,7 @@ html {
     color: var(--text);
     text-decoration: none;
     transition: opacity 0.2s ease;
-    opacity: 0.7;
+    opacity: 0.85;
 }
 
 .contact-info a:hover {
@@ -1078,7 +1078,7 @@ html {
 }
 
 body:not(.notification-dismissed) .hero {
-    padding-top: 13rem;
+    padding-top: 16rem;
 }
 
 @media (max-width: 768px) {
@@ -1103,7 +1103,7 @@ body:not(.notification-dismissed) .hero {
     }
     
     body:not(.notification-dismissed) .hero {
-        padding-top: 11rem;
+        padding-top: 14rem;
     }
     
     .blog-index {
@@ -1141,7 +1141,7 @@ body:not(.notification-dismissed) .hero {
     }
     
     body:not(.notification-dismissed) .hero {
-        padding-top: 10rem;
+        padding-top: 13rem;
     }
     
     .error-content h1 {
