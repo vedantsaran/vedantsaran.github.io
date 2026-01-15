@@ -525,17 +525,24 @@ footer p {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 0;
     }
     .logo {
         flex: 0 0 auto;
+        margin-right: auto;
+    }
+    .nav-links {
+        display: none;
     }
     .theme-toggle {
         order: 2;
+        margin-left: auto;
         margin-right: 0.5rem;
     }
     .hamburger {
         display: flex;
         order: 3;
+        flex: 0 0 auto;
     }
     .cards-grid {
         grid-template-columns: 1fr;
@@ -608,9 +615,9 @@ html {
 }
 
 .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.6s ease forwards;
+    opacity: 1;
+    transform: none;
+    animation: none;
 }
 
 @media (max-width: 768px) {
