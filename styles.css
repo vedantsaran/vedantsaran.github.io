@@ -1108,7 +1108,7 @@ body:not(.notification-dismissed) .hero {
     }
     
     body:not(.notification-dismissed) .hero {
-        padding-top: 14rem;
+        padding-top: 17rem;
     }
     
     .blog-index {
@@ -1146,7 +1146,7 @@ body:not(.notification-dismissed) .hero {
     }
     
     body:not(.notification-dismissed) .hero {
-        padding-top: 13rem;
+        padding-top: 16rem;
     }
     
     .error-content h1 {
